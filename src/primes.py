@@ -22,19 +22,19 @@ def __findPrimes(condition):
 
 """Returns a list of the first n primes"""
 def nPrimes(n):
-    return findPrimes(lambda primes, i: len(primes) < n)
+    return __findPrimes(lambda primes, i: len(primes) < n)
 
 
 
 """Returns a list of primes less than n"""
 def primesBelowN(n):
-    return findPrimes(lambda primes, i: i < n)
+    return __findPrimes(lambda primes, i: i < n)
 
 
 
 """Returns nth prime"""
 def nthPrime(n):
-    return nPrimes()[-1]
+    return nPrimes(n, n)[-1]
 
 
 
