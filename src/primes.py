@@ -40,6 +40,7 @@ def nth_prime(n):
 
 """Returns True if n is prime else False"""
 def isPrime(n):
-    import re
-
-    return not re.match(r'^.?$|^(..+?)\1+$', '1'*n)
+    for p in __findPrimes(lambda primes, i: i < n ** 0.5):
+        if n % p == 0:
+            return False
+    return True
