@@ -33,7 +33,7 @@ def primesBelowN(n):
 
 
 """Returns nth prime"""
-def nth_prime(n):
+def nthPrime(n):
     return nPrimes()[-1]
 
 
